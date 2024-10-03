@@ -1,0 +1,61 @@
+/* wasteHistory.css */
+.waste-history-container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 220px; /* Leave space for the fixed sidebar */
+    padding: 20px;
+    width: 100%; /* Ensures it uses available width */
+  }
+  
+  /* Search bar styles */
+  .search-container {
+    margin: 20px 0; 
+    margin-top: 90px;
+  }
+  
+  .search-bar {
+    width: 300px; /* Set width for the search bar */
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+  
+  /* Table styles */
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .waste-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .waste-history-table th,
+  .waste-history-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .waste-history-table th {
+    background-color: #185233; /* Dark background for header */
+    color: #ffffff; /* White text color */
+  }
+  
+  .waste-history-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+  }
+  
+  .waste-history-table tr:hover {
+    background-color: #e1f5e1; /* Light green background on hover */
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+  

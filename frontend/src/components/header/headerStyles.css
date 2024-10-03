@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0; /* Fixed at the top of the page */
+  left: 200px; /* Space to the right of the sidebar */
+  width: calc(100% - 200px); /* Full width minus the sidebar width */
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Decreased the gap between icons */
+}
+
+.sidebar-icon {
+  margin-right: 15px; /* Space between the sidebar icon and the search bar */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-bar {
+  flex-grow: 1; /* Allows the search bar to take up available space */
+}
+
+.search-bar input {
+  width: 35%; /* Ensure the search bar takes up available space */
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 17px;
+  outline: none;
+  font-size: 16px;
+  background-color: #ebebee;
+}
+
+.icons img {
+  width: 30px; 
+  height: 30px;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  background-color: #f1f1f1; /* Light background on hover */
+}

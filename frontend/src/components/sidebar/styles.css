@@ -1,0 +1,206 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  background-color: #e7ece8; /* Corrected background color */
+  padding: 0;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: #16002e;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: #185233;
+  position: fixed; /* Keeps sidebar fixed in place */
+  width: 200px;
+  height: 100vh; /* Full height of the viewport */
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Prevents scrolling within the sidebar */
+  padding: 0;
+}
+
+.box-above-dashboard {
+  margin-right: 29px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-logo {
+  width: 220px;
+  height: 80px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 195px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  margin-bottom: 5px;
+}
+
+.sidebar a img.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+/* Sidebar styles */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 195px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  margin-bottom: 5px;
+}
+
+/* Active link styles */
+.sidebar a.active {
+  background: #77c23e; /* Active link background */
+  color: white; /* Active link text color */
+  width: 200px; /* Ensure the width is consistent */
+}
+
+/* Hover effect for all links */
+.sidebar a:hover {
+  background: #77c23e; /* Hover link background color */
+  color: white; /* Keep text color consistent */
+}
+
+/* Keep active link color on hover */
+.sidebar a.active:hover {
+  background: #77c23e; /* Keep active link color on hover */
+  color: white; /* Keep text color consistent */
+}
+
+
+/* Main content styles */
+.main {
+  margin-left: 220px; /* Leave space for the fixed sidebar */
+  padding: 20px; /* Optional: add padding to main content */
+}
+
+.sidebar-spacer {
+  height: 165px;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: #16002e;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Container for main content */
+.main-content {
+  margin-left: 220px; /* Leave space for the fixed sidebar */
+  padding: 20px;
+}
+
+/* Section for the cards */
+.cards-section {
+  display: flex;
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 20px; /* Add space between cards */
+  margin-top: 90px;
+  margin-left: 250px;
+}
+
+/* Card styles for layout adjustments */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around; /* Center the cards */
+  padding: 20px;
+}
+
+.card {
+  width: 220px; /* Set a fixed width for each card */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.process-image{
+  width: 85%;
+  margin-top: 50px;
+}
+
+/* Container for the grid of text boxes */
+.image-text-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: auto; /* Adjust row height automatically */
+  gap: 20px; /* Add space between the boxes */
+  margin-top: 20px;
+  max-width: 85%;
+}
+
+/* Styling for the text box */
+.text-box {
+  padding: 5px;
+  background-color: #abc9a7; /* Light gray background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #333;
+  height: 200px; /* Set fixed height to keep all boxes the same size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Evenly space the content inside */
+  text-align: center;
+}
+
+/* Text styles within the text box */
+.text-box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
